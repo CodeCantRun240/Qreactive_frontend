@@ -1,0 +1,149 @@
+/* styles.module.css */
+
+/* Local class for headings */
+.headingStyles {
+    /* Global heading styles */
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+/* Specific styles for h3 */
+.headingStyles.h3 {
+    font-size: 1.25rem;
+}
+
+/* Specific styles for h4 */
+.headingStyles.h4 {
+    font-size: 0.875rem;
+}
+
+/* Specific styles for paragraphs */
+.paraStyles {
+    margin-bottom: 1.25rem;
+    color: hsl(210, 22%, 49%);
+}
+
+/* Component-specific styles */
+.container {
+    width: 90vw;
+    margin: 5rem auto;
+    background: white;
+    border-radius: 0.25rem;
+    padding: 2.5rem 2rem;
+    max-width: 920px;
+    display: grid;
+    gap: 1rem 2rem;
+}
+
+.container h3 {
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.section {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.question {
+    padding: 1rem 1.5rem;
+    border: 2px solid lightblue;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question h4 {
+    text-transform: none;
+    line-height: 1.5;
+}
+
+.question p {
+    color: hsl(209, 34%, 30%);
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.question header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question header h4 {
+    margin-bottom: 0;
+}
+
+.btn {
+    background: transparent;
+    border-color: transparent;
+    background: #eae6eb;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically on small screens */
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(87, 87, 235), lightblue);
+    color: white;
+    padding: 40px;
+    /* Reduce padding for smaller screens */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.text-content {
+    max-width: 100%;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.image-content {
+    max-width: 100%;
+}
+
+.hero img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+
+/* Media Query for small screens */
+
+@media only screen and (min-width: 600px) {
+    .hero {
+        flex-direction: row;
+        /* Display elements side by side on larger screens */
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .text-content {
+        max-width: 30%;
+    }
+    .image-content {
+        max-width: 70%;
+    }
+}

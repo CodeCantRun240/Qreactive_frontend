@@ -1,0 +1,359 @@
+
+
+.Container {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.Rectangle {
+    display: block;
+    width: 350px;
+    height: 250px;
+    background-color: #2D2D2D;
+    margin-top: 60px;
+    border-radius: 15px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+  .Container {
+    flex-direction: column
+    
+  }
+  .resize {
+    font-size: 10px;
+  }
+
+  .heroContainer img{
+    width: 0px;
+    height: 0px;
+    
+  }
+}
+
+.Rectangle2 {
+    width: 36%;
+    height: 18%;
+    background-color: #414141;
+    border-radius: 10px;
+    
+    justify-content: center;
+    display: flex;
+    margin: 160px auto 0;
+    font-weight: bold;
+    
+}
+
+.rec2text{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  color: #B3B3B3;}
+
+.rectext {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 5px;
+    
+}
+
+.blur-container {
+    width: 1000px;
+    height: 270px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  
+  .layer-blur {
+    position: absolute;
+    width: 1500px;
+    height: 700px;
+    margin-left: 400px;
+    margin-top: 650px ;
+    rotate: 90deg;
+    background-color: rgba(120, 48, 46, 0.35); 
+    filter: blur(150px); 
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+
+
+.button img {
+    margin-top: 37px;
+    margin-left: 25px;
+}
+
+.buttonContainer {
+    margin: 0 auto;
+    display: flex;
+    margin-right: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button:hover {
+    background: #555555; 
+  }
+  
+  .button:active {
+    transform: scale(0.95); 
+  }
+
+  .button span {
+    font-size: 24px; 
+   
+    margin-left: 22px; 
+    margin-top  : 37px; 
+  }
+
+  .showmore {
+    margin-top: 45px;
+    font-family: 'Lato';
+    font-weight: 275;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #B3B3B3;
+  }
+
+  .showmore:hover {
+    color: #87302E; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  .nextStepButton {
+ 
+    margin-top: 100px;
+    position: absolute;
+    width: 396px;
+    height: 58px;
+
+
+    background: linear-gradient(0deg, rgba(120, 48, 46, 0.8), rgba(120, 48, 46, 0.8)), #FFFFFF;
+    border-radius: 10px;
+
+  }
+
+  .nextStepButton span {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .nextStepButton:active {
+    transform: scale(0.85); /* Add a slight scale effect on click */
+  }
+
+  .nextStepButton:hover {
+    background: #87302E; /* Change color on hover */
+  }
+
+  .Border {
+    position: flex;
+    width: 0px;
+    height: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    border: 0px solid none;
+  
+}
+  
+    .navbar
+    {
+      font-size: 15px;
+      margin-right: 10px;
+    }
+
+    .container {
+      align-items: center;
+      text-align: center;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-evenly;
+  }
+  
+
+.Rectangle {
+  display: block;
+  width: 350px;
+  height: 250px;
+  background-color: #2D2D2D;
+  margin-top: 60px;
+  
+  border-radius: 15px;
+  text-align: center;
+  
+
+}
+
+.Rectangle2 {
+  width: 36%;
+  height: 18%;
+  background-color: #414141;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  margin: 30px auto 0;
+  font-weight: bold;
+}
+
+.Rectangle img {
+width: 100px;
+height: 100px;
+margin: 30px auto 0;
+}
+
+.rec2text{
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #B3B3B3;}
+
+.rectext {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 5px;
+  
+}
+
+.blur-container {
+  width: 1000px;
+  height: 270px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+
+.layer-blur {
+  position: absolute;
+  width: 1500px;
+  height: 700px;
+  margin-left: 400px;
+  margin-top: 650px ;
+  rotate: 90deg;
+  background-color: rgba(120, 48, 46, 0.35); 
+  filter: blur(150px); 
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.button {
+  display: flex;
+  width: 273px;
+  height: 104px;
+  margin-left: 80px; 
+  background: #3396FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.button img {
+  margin-top: 37px;
+  margin-left: 25px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.button:hover {
+  background: blue; 
+}
+
+.button:active {
+  transform: scale(0.95); 
+}
+
+.button span {
+  font-size: 24px; 
+ 
+  margin-left: 22px; ;
+  margin-top  : 37px;
+  
+}
+
+.showmore {
+  margin-top: 45px;
+  font-family: 'Lato';
+  font-weight: 275;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #B3B3B3;
+}
+
+.showmore:hover {
+  color: #87302E; 
+  text-decoration: underline;
+}
+
+
+
+.faqBorder {
+  
+  width: 3000px;
+  height: 1px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+  border: 0px;
+  
+}
+
+.navbar
+{
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.heroImage{
+ /* clip-path: polygon(11% 3%, 100% 0, 100% 74%, 0 86%);*/
+  margin-left: 30px;
+  border-radius: 5%    ;
+  width: 500px;
+  height: 500px;
+}
+
+.showmore {
+  margin-bottom: 50px;
+}
+
+.spacing{
+  height: 50px;
+  background-color: none;
+  margin-bottom: 50px;
+}

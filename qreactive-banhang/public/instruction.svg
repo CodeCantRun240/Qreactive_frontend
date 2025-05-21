@@ -1,0 +1,14 @@
+<svg width="2500" height="350" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <circle cx="850" cy="216" fill="#78302E" id="svg_1" r="70.56" stroke="#78302E" stroke-width="5" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <line fill="none" id="svg_2" stroke="#78302E" stroke-width="32" x1="-24" x2="850" y1="34" y2="216"/>
+  <line fill="none" id="svg_3" stroke="#78302E" stroke-width="32" transform="matrix(1, 0, 0, 1, 0, 0)" x1="2555" x2="850" y1="34" y2="216"/>
+ </g>
+ <g class="layer">
+  <title>Layer 2</title>
+  <rect fill="none" height="320" id="svg_4" stroke="black" stroke-width="0" width="2000" x="221" y="363"/>
+ </g>
+</svg>

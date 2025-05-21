@@ -1,0 +1,187 @@
+
+.belowDiv{
+    position: center;
+    width: 80%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    
+    border-radius: 6px;
+    margin-left: 10%;
+    display:block;
+    font-family: 'Poppings', sans-serif;
+}
+.body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+.inputBox{
+    position: relative;
+   
+    margin: 20px;
+    width: 300px; 
+    margin-bottom: 15px;
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    outline: none;
+    color:black;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1 em;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    transform: translateX(10px) translateY(-7px);
+    color: blue;
+    font-weight: 500;
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: white;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+
+}
+
+.inputBox label
+{
+    position: absolute;
+    left: 0;
+    padding: 1px;
+    pointer-events: none;
+    font-size: 1 em;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label
+{
+    transform: translateX(10px) translateY(-7px);
+    color: blue;
+    font-weight: 500;
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: white;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    outline: none;
+    color:black;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.button[type="button"] {
+    margin-left: 0px;
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.button[type="button"]:hover {
+    background-color: blue; /* Change background color on hover */
+}
+
+.errorMessage {
+    font-size: 10px;
+    color: red;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px; /* Adjust as needed based on your design */
+    margin: 0 auto;
+}
+
+.inputBox h2 {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.header h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 15px;
+    margin-left: 24px;
+}
+
+.inputBox2 {
+position: relative; 
+margin: 20px;
+width: 500px; 
+margin-bottom: 15px;
+}
+
+.inputBox2 input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    outline: none;
+    color:black;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.inputBox2 span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1 em;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.inputBox2 input:valid ~ span,
+.inputBox2 input:focus ~ span
+{
+    transform: translateX(10px) translateY(-7px);
+    color: blue;
+    font-weight: 500;
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: white;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+
+}

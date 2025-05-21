@@ -1,0 +1,329 @@
+
+
+/* Your regular CSS */
+
+
+
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+        font-family: Arial, sans-serif;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb {
+    color: #777;
+    margin: 0;
+}
+
+/* Your regular CSS */
+
+.createBtn {
+    display: inline-block;
+    font-weight: bold;
+    padding: 1.5rem;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    /* Adjust as needed */
+}
+
+.createBtn div {
+    display: flex;
+    align-items: center;
+}
+
+.createBtn img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+}
+
+/* Add your existing styles above this line */
+
+
+.bigContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 99%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-right:20px;
+    /* Allow big-container to take up available vertical space */
+    border-radius: 5px;
+}
+
+.headDiv1,
+.headDiv2,
+.belowDiv {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+/* Add this style to position the dropdown at the end of head-div1 */
+
+.headDiv1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 70px;
+    flex: 2;
+    margin-right: 20px;
+}
+
+@media (max-width: 200px) {
+    .headDiv1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dropdown {
+        margin-top: 1rem;
+        /* Adjust as needed */
+    }
+}
+
+.headDiv2 {
+    width: 30%;
+    height: 70px;
+    flex: 1;
+}
+
+.headDiv2 input[type="text"] {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+}
+
+.belowDiv {
+    width: 100%;
+    min-height: 100vh;
+    /* Ensure below-div takes up the rest of the screen height */
+}
+@media (max-width: 800px) {
+    .belowDiv{
+        width: 100%
+    }
+}
+
+
+@media (max-width: 800px) {
+    .headDiv1 {
+        width: 70%;
+    }
+    .headDiv2 {
+        width: 30%;
+    }
+}
+
+
+/* Style for buttons and dropdowns */
+
+.selectAllBtn,
+.copyBtn,
+.deleteBtn,
+.dropbtn1,
+.dropbtn2 {
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem;
+    text-decoration: none;
+    margin-right: 10px;
+    border: none;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+}
+
+
+/* Dropdown button on hover & focus */
+.deleteBtn:hover,
+.selectAllBtn:hover,
+.copyBtn:hover,
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+
+/* The container div - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+/* Style for button backgrounds */
+
+#copyButton {
+    background-image: url('../public/copy.svg');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    hover:red;
+}
+
+#deleteButton {
+    background-image: url('../public/delete.svg');
+    background-size: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+
+
+
+/* Add your existing styles above this line */
+
+
+/* Add your existing styles above this line */
+
+.qrCodeContainer {
+    display: grid;
+    grid-template-rows: auto 1fr; /* First row takes auto height, second row takes remaining space */
+    align-items: start; /* Align items at the start of the row (top) */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 40vh; /* Adjust height as needed */
+    gap: 10px; /* Adjust gap between rows and columns as needed */
+    padding: 10px; /* Add padding if necessary */
+    grid-template-columns: repeat(4, 1fr); /* Divide the second row into four columns */
+}
+
+.checkboxContainer {
+    grid-row: 1; /* Place the checkboxContainer in the first row */
+    grid-column: span 4; /* Span across all four columns */
+}
+.qrCodeInfo
+,.textColumns{margin-top:8px}
+
+.qrCode {
+     max-width: 84%;
+    height: auto;
+    grid-column: 1; /* Place qrCode in the first column of the second row */
+}
+
+.qrCodeInfo {
+    grid-column: 2; /* Place qrCodeInfo in the second column of the second row */
+}
+
+.qrCodeInfo p {
+    margin-bottom: 9px; /* Add a 3px gap between each paragraph */
+}
+.textColumns {
+    grid-column: 3; /* Place textColumns in the third column of the second row */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+}
+
+.buttonsContainer {
+    grid-column: 4; /* Place buttonsContainer in the fourth column of the second row */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Align buttons to the end of the container */
+}
+.buttonsContainer button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative; /* Position the dropdown relative to the container */
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownContent.show {
+    display: block;
+}
