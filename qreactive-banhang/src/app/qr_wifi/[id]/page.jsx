@@ -16,7 +16,7 @@ export default function WifiQREdit({ params }) {
         const fetchData = async () => {
             try {
                 // Fetch WiFi QR data by ID
-                const response = await axios.get(`http://localhost:5000/wifi/edit/${params.id}`);
+                const response = await axios.get(`https://qreactive-backend.onrender.com/wifi/edit/${params.id}`);
                 const { ssid, password } = response.data;
                 
                 // Set state with retrieved data
@@ -37,7 +37,7 @@ export default function WifiQREdit({ params }) {
         e.preventDefault();
         try {
             // Update WiFi QR data by ID
-            const response = await axios.post(`http://localhost:5000/wifi/edit/${params.id}`, {
+            const response = await axios.post(`https://qreactive-backend.onrender.com/wifi/edit/${params.id}`, {
                 ssid,
                 password,
             });

@@ -162,7 +162,7 @@ function MyProfileContent() {
     const handleSave = async () => {
         const Data = JSON.stringify(formData);
         try {
-            const response = await fetch('http://localhost:5000/profile', {
+            const response = await fetch('https://qreactive-backend.onrender.com/profile', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

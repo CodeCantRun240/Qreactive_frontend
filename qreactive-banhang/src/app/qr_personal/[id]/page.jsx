@@ -26,7 +26,7 @@ export default function UserProfile({params}) {
       const fetchData = async () => {
         
         try {
-          const response = await axios.get(`http://localhost:5000/personalQR/profile/${params.id}`);
+          const response = await axios.get(`https://qreactive-backend.onrender.com/personalQR/profile/${params.id}`);
           setLoading(false);
           setName(response.data.name);
           setEmail(response.data.email);
@@ -52,7 +52,7 @@ export default function UserProfile({params}) {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.post(`http://localhost:5000/personalQR/edit/${params.id}`, {
+        const response = await axios.post(`https://qreactive-backend.onrender.com/personalQR/edit/${params.id}`, {
           name,
           email,
           phone,

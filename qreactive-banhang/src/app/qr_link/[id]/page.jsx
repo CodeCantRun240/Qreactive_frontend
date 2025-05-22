@@ -11,7 +11,7 @@ export default function Link({params}) {
         const fetchData = async () => {
             
             try {
-            const response = await axios.get(`http://localhost:5000/link/edit/${params.id}`);
+            const response = await axios.get(`https://qreactive-backend.onrender.com/link/edit/${params.id}`);
             setLink(response.data.content);
             setLoading(false);
             } catch (error) {
@@ -28,7 +28,7 @@ export default function Link({params}) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://localhost:5000/link/edit/${params.id}`, {
+            const response = await axios.post(`https://qreactive-backend.onrender.com/link/edit/${params.id}`, {
                 link,
             });
             console.log(response.data);

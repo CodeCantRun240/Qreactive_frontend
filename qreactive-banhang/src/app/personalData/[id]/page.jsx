@@ -23,7 +23,7 @@ const EditPersonalData = ({ personalData }) => {
         e.preventDefault();
         
         try {
-            const response = await axios.post(`http://localhost:5000/personalData/edit/${personalData._id}`, { properties: editedProperties });
+            const response = await axios.post(`https://qreactive-backend.onrender.com/personalData/edit/${personalData._id}`, { properties: editedProperties });
             console.log(response.data);
         }
         catch (error) {

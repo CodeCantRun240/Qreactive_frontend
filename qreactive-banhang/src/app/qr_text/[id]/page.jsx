@@ -15,7 +15,7 @@ export default function Text({params}) {
         const fetchData = async () => {
             
             try {
-            const response = await axios.get(`http://localhost:5000/text/edit/${params.id}`);
+            const response = await axios.get(`https://qreactive-backend.onrender.com/text/edit/${params.id}`);
             setText(response.data.content);
             setLoading(false);
             } catch (error) {
@@ -32,7 +32,7 @@ export default function Text({params}) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://localhost:5000/text/edit/${params.id}`, {
+            const response = await axios.post(`https://qreactive-backend.onrender.com/text/edit/${params.id}`, {
                 text,
             });
             console.log(response.data);

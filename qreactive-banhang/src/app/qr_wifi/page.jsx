@@ -31,7 +31,7 @@ const QRPersonalGenerator = () => {
     const generateQr = async () => {
         try {
             // Send the data to the backend for WiFi QR code generation
-            const response = await axios.post('http://localhost:5000/wifi/generate', {
+            const response = await axios.post('https://qreactive-backend.onrender.com/wifi/generate', {
                 name: SSID,
                 encryption: securityType,
                 password: password,

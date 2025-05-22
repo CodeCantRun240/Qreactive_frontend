@@ -33,7 +33,7 @@ const QRLinkGenerator = () => {
         try {
             const email= getEmailUser();
             // Send the link to the backend for QR code generation
-            const response = await axios.post("http://localhost:5000/link/generate", {
+            const response = await axios.post("https://qreactive-backend.onrender.com/link/generate", {
                 qrLink,
                 email
             });

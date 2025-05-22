@@ -39,7 +39,7 @@ function MyProfileContent() {
     const fetchUserData = async () => {
         try {
             
-            const response = await axios.post(`http://localhost:5000/profile`, {emailUser});
+            const response = await axios.post(`https://qreactive-backend.onrender.com/profile`, {emailUser});
             const data = response.data;
             console.log(data.firstName);
 
@@ -173,7 +173,7 @@ function MyProfileContent() {
         
         try {
             
-            const response = await axios.post(`http://localhost:5000/profile/edit`, {Data, emailUser});
+            const response = await axios.post(`https://qreactive-backend.onrender.com/profile/edit`, {Data, emailUser});
             const data = response.data;
             
 

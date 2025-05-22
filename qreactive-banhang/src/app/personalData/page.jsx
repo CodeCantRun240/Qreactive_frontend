@@ -22,7 +22,7 @@ export async function handler(req, res) {
   try {
     const email = await getEmailUser();
     const data = req.body;
-    const response = await axios.post('http://localhost:5000/personalQR/generate', {
+    const response = await axios.post('https://qreactive-backend.onrender.com/personalQR/generate', {
       data,
       email,
     });
@@ -60,7 +60,7 @@ const PersonalQRForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/personalDataQR/generate', formData);
+      const response = await axios.post('https://qreactive-backend.onrender.com/personalDataQR/generate', formData);
 
       // Invalidate and refetch the data to update the UI
       queryClient.invalidateQueries('personalQR');

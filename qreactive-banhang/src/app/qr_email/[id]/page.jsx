@@ -18,7 +18,7 @@ export default function EmailQREdit({ params }) {
         const fetchData = async () => {
             try {
                 // Fetch email QR data by ID
-                const response = await axios.get(`http://localhost:5000/email/edit/${params.id}`);
+                const response = await axios.get(`https://qreactive-backend.onrender.com/email/edit/${params.id}`);
                 const { email, subject, body } = response.data;
                 
                 // Set state with retrieved data
@@ -40,7 +40,7 @@ export default function EmailQREdit({ params }) {
         e.preventDefault();
         try {
             // Update email QR data by ID
-            const response = await axios.post(`http://localhost:5000/email/edit/${params.id}`, {
+            const response = await axios.post(`https://qreactive-backend.onrender.com/email/edit/${params.id}`, {
                 email,
                 subject,
                 body,

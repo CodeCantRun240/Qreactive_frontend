@@ -83,7 +83,7 @@ function MyQRCodesContent() {
     const fetchQRCodes = async () => {
       try {
         const email = getEmailUser();
-        const response = await axios.post('http://localhost:5000/qrList/list', {
+        const response = await axios.post('https://qreactive-backend.onrender.com/qrList/list', {
           email
           });
         setQRCodes(response.data.qrCodes);
@@ -101,7 +101,7 @@ function MyQRCodesContent() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.get(`http://localhost:5000/profile/delete/${id}`);
+      await axios.get(`https://qreactive-backend.onrender.com/profile/delete/${id}`);
       //refresh the page
       const updatedQRCodes = qrCodes.filter((code) => code._id !== id);
       setQRCodes(updatedQRCodes);

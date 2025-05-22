@@ -12,7 +12,7 @@ function MyQRCodesContent() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/personalQR/search', { searchQuery });
+      const response = await axios.post('https://qreactive-backend.onrender.com/personalQR/search', { searchQuery });
       setSearchResults(response.data.qrCodes);
     } catch (error) {
       console.error('Error searching for public vCard QR codes:', error);

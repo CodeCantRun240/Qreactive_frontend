@@ -3,13 +3,7 @@
 Old uni group project for a QR code website using NodeJS uploading this just incase I lost it
 I also added the Report so you don't need to read the code
 
-Run backend server(localhost:5000):
-
-$npm start
-
-Run frontend server (localhost:3000):
-
-$npm run dev
+This is the frontend of Qreactive, the backend is already deployed on Render. To deploy, install the followind dependencies
 
 npm install axios;
 
@@ -19,6 +13,11 @@ npm i @tanstack/react-query;
 
 npm install react-icons --save;
 
-Qrgen:
+npm install
 
-npm i js-cookie;
+npm update
+
+deploy command:
+
+$npm run dev
+

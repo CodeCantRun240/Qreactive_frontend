@@ -42,7 +42,7 @@ const QRPersonalGenerator = () => {
         try {
             const emailUser = getEmailUser();
             // Send the link to the backend for QR code generation
-            const response = await axios.post('http://localhost:5000/personalQR/generate', {
+            const response = await axios.post('https://qreactive-backend.onrender.com/personalQR/generate', {
                 name: Name,
                 email: Email,
                 phone: Phone,
